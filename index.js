@@ -22,7 +22,8 @@ let keepGoing = (array, changeValue, skipValue)=>{
 
 let findBy = (array, findFn)=>{
   for (let i = 0; i < array.length; i++){
-    if(findFn){
+    
+    if(findFn[i] === array[i]){
       return findFn;
     }
   }
